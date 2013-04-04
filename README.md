@@ -1,7 +1,7 @@
 originator-f4
 =============
 
-About 
+#About 
 
 A wordpress theme implementation of Zurb's excellent Foundation 4. 
 
@@ -12,23 +12,23 @@ theme, giving you the build you want and a starting point where
 buttons, links, etc are all colored how you want. This is currently a
 basic, functional theme.
 
-Shortcodes
+#Shortcodes
 
 There are shortcodes for orbit and rows/columns.
 
+##Orbit
 To make an orbit slider simply add shortcode
-[orbit][orbit_slide]<img src="img1.jpg>[/orbit_slide][orbit_slide]<img
-src="img2.jpg>[/orbit_slide][/orbit]
+`[orbit][orbit_slide]YOUR IMAGE/CONTENT[/orbit_slide][orbit_slide]YOUR IMAGE/CONTENT[/orbit_slide][/orbit]`
 
+##Row/Columns
 Rows/columns work the same:
-[row][column small="small-12" large="large-6"]Six columns large, 12
-columns small[/columns][column small="small-12" large="large-6"]Six
-columns large, 12 columns small[/columns][/row]
+`[row][column small="small-12" large="large-6"]Six columns large, 12 columns small[/columns][column small="small-12" large="large-6"]Six columns large, 12 columns small[/columns][/row]`
 
+#Important Stuff
 TODO: Omit line breaks between shortcodes in the shortcode functions - still working that out :/
-
 TODO: Still need to iron out kinks in comments and pingbacks.
 
+#Credits
 Big ups to 320Press - this uses parts from their awesome
 Foundation 3 based theme, as well as Bones framework - which this also uses
 (albeit somewhat poorly)!
