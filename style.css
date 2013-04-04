@@ -1,0 +1,74 @@
+ /*
+Theme Name: AMS Foundation 4
+Theme URI: http://agustinsevilla.com/ams-foundation-4/
+Description: My humble implementation of Zurb's beautiful Foundation 4
+<a href="http://your-website.com/">Yours Truly</a>
+Version: 1 (WP2.8.4)
+Author: Agustin M. Sevilla III
+Author URI: http://agustinsevilla.com/
+Tags: ZURB, Foundation, responsive
+*/
+
+@import url("css/foundation.min.css");
+@import url("css/normalize.css");
+
+body {background:#222;}
+div.header-image-wrap {
+	background: rgb(201,222,150); /* Old browsers */
+	background: -moz-linear-gradient(45deg,  rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57,130,53,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* IE10+ */
+	background: linear-gradient(45deg,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	div.siteinfo h1 {margin-bottom:0;}
+	div.siteinfo h1 a, div.siteinfo h4 a {color:#fefefe;}
+
+div.breadcrumb-wrap,
+div.content-wrap {background:#fefefe;}
+
+
+	#footer-sidebar div.panel {
+		border-style: solid;
+		border-width: 1px;
+		border-color: #d9d9d9;
+		margin-bottom: 1.25em;
+		padding: 1.25em;
+		background: #fefefe;
+		}
+
+	#primary-sidebar .widget {
+		border-bottom:1px solid #dedede;
+		margin-bottom: 1em;
+	}
+
+div.footer-wrap {
+	padding-top:1em;
+	background:#222;
+	}
+
+/* Comments */
+h3#comments {}
+ol.commentlist {list-style: none;}
+ol.commentlist li ul {
+	list-style: none;
+	margin-top:20px;
+	margin-bottom: 1.25em;
+	padding: 1.25em;
+	background: rgba(255,255,255,0.75);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+div.comment-author.vcard {border:none;padding:0;margin-bottom:0;}
+div.comment-author.vcard img {float:left;margin-right:0.5em;}
+
+form#commentform ul#comment-form-elements {list-style: none;}
+form#commentform input#submit {margin-top:1.2em;}
+
+/* Special styles for the 3D Object Post Type */
+.large-4.columns.object3D-sidebar {
+	padding-top:0.5em;
+}
