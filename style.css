@@ -1,7 +1,7 @@
  /*
-Theme Name: Originator 4
-Theme URI: TBD
-Description: My humble implementation of Zurb's beautiful Foundation 4
+Theme Name: AMS Foundation 4
+Theme URI: http://agustinsevilla.com/ams-foundation-4/
+Description: My humble implementation of Zurb's beautiful Foundation 4. 
 Version: 1 (WP2.8.4)
 Author: Agustin M. Sevilla III
 Author URI: http://agustinsevilla.com/
@@ -10,35 +10,6 @@ Tags: ZURB, Foundation, responsive
 
 @import url("css/foundation.min.css");
 @import url("css/normalize.css");
-
-/* 
-	You can use these classes to start skinning your version 
-*/
-body {background:#222;}
-
-div.header-image-wrap {}
-	div.siteinfo h1 {}
-	div.siteinfo h1 a, div.siteinfo h4 a {}
-
-div.breadcrumb-wrap,
-div.content-wrap {background:#fefefe;}
-
-
-	#footer-sidebar div.panel {
-		margin-bottom: 1.25em;
-		padding: 1.25em;
-		background: #fefefe;
-		}
-
-	#primary-sidebar .widget {
-		border-bottom:1px solid #dedede;
-		margin-bottom: 1em;
-	}
-
-div.footer-wrap {
-	padding-top:1em;
-	background:#222;
-	}
 
 /* Comments */
 h3#comments {}
