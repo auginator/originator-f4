@@ -95,7 +95,15 @@ function remove_thumbnail_dimensions( $html ) {
 
 //Add thumbnail support
 //TODO: Need some good sizes.
-add_theme_support('post-thumbnails');
+//add_theme_support('post-thumbnails');
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+    //set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions   
+}
+
+if ( function_exists( 'add_image_size' ) ) { 
+    add_image_size( 'big-square-thumb', 500, 500, true); 
+}
 
 /////////////// MENUS
 if ( ! function_exists('amsf_nav_menus') ) {
@@ -135,6 +143,10 @@ register_sidebar(array(
 	'after_widget'  => '</div></li>',
 	'before_title'  => '<h4 class="widgettitle">',
 	'after_title'   => '</h4>' ));
+
+//Remove wpautop from shortcodes
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 99);
 
 //Add custom classes to previous/next 
 function posts_link_next_class() {
