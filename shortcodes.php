@@ -33,7 +33,7 @@ add_shortcode('column', 'foundation4_columns');
 function foundation4_orbit( $atts, $content = null ) {
 	
 	$output = '<ul data-orbit>';
-	$output .= do_shortcode($content);
+	$output .= do_shortcode(shortcode_unautop($content));
 	$output .= '</ul>';
 	
 	return $output;

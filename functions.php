@@ -219,7 +219,7 @@ function amsf_topnav() {
     		'theme_location'  => 'amsf_top_nav',
     		'container' => 'section',
     		'container_class' => 'top-bar-section',
-    		'menu_class' => 'right',
+    		'menu_class' => 'left',
     		'walker' => new top_bar_walker
     	)
     );
