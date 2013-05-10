@@ -16,10 +16,9 @@
 					<?php echo get_post_meta($post->ID, 'PostThumb', true); ?>
 
 					<?php the_content('Read Full Article'); ?>
-					<p><?php the_tags('Tags: ', ', ', '<br />'); ?> | Posted in <?php the_category(', '); ?>
-
-					<?php comments_popup_link('No Comments;', '1 Comment', '% Comments'); ?></p>
 					
+					<hr>
+
 					<?php comments_template(); ?>
 
 				</div>
